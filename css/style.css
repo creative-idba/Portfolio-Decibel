@@ -724,6 +724,7 @@ header ul li i {
   width: 40%;
   height: max-content;
   opacity: 0;
+  padding-bottom: 20px;
   text-align: center;
   border-radius: 10px;
   box-sizing: border-box;
@@ -776,35 +777,6 @@ header ul li i {
 .projects p {
   font-size: 13px;
   margin-top: 3px;
-}
-.projects button {
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 7px 15px;
-  margin: 12px 0 20px;
-  border-radius: 5px;
-  background-color: #292929e1;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-.projects h5 {
-  font-size: 15px;
-}
-.projects h5 i {
-  margin-left: 5px;
-}
-.projects button:hover {
-  transform: scale(1.05);
-  background-color: #383838e1;
-  box-shadow: 0 1px 4px #292929be;
 }
 /*** Projects End ***/
 

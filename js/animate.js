@@ -38,7 +38,6 @@ window.addEventListener('scroll', function () {
   var medpanf = document.querySelector('.medpanf');
   var medpang = document.querySelector('.medpang');
   var medii = document.querySelector('#medii');
-  var mediy = document.querySelector('#mediy');
   var medif = document.querySelector('#medif');
   var medig = document.querySelector('#medig');
 

@@ -990,6 +990,7 @@ header ul li i {
 }
 /*** Contact End ***/
 
+
 /*** Footer ***/
 footer {
   display: block;
@@ -1138,7 +1139,7 @@ footer i {
   }
   /* About End */
 }
-/***** kakak Tablet End ******/
+/***** kakak s Tablet End ******/
 
 /***** kakak Mobaile *****/
 @media screen and (max-width: 600px) {

@@ -13,7 +13,7 @@ window.addEventListener('scroll', function () {
 // Animate Back top
 window.addEventListener('scroll', function () {
   var backTop = document.querySelector('.back-top');
-  var faArrowCircleUp = document.querySelector('.fa-arrow-circle-up');
+  var faArrowCircleUp = document.querySelector('.fa-circle-up');
 
   backTop.classList.toggle('back-topp', window.scrollY > 550);
   faArrowCircleUp.classList.toggle('faArrowCircleUp', window.scrollY > 550);

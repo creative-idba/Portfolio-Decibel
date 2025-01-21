@@ -1,4 +1,4 @@
-// Navbar
+// Navbar menu handpone
 const menuToggle = document.querySelector('.menu-toggle input');
 const menuTo = document.querySelector('.menu-to');
 const nav = document.querySelector('header ul');
@@ -30,4 +30,84 @@ window.addEventListener('scroll', function () {
       navigation.children[i].classList.add('selected');
     }
   });
+});
+
+//SCROLL navbar about
+$(document)
+.on('click', '.page-scrolla', function (e) {
+  var destination = $(this).attr('href');
+  // eslint-disable-next-line no-undef
+  var elemenDestination = $(destination);
+
+  $('html,body').animate(
+    {
+      scrollTop: elemenDestination.offset().top -65,
+    },
+    800
+  );
+  e.preventDefault();
+});
+
+//medsos
+$(document)
+.on('click', '.page-scrollm', function (e) {
+  var destination = $(this).attr('href');
+  // eslint-disable-next-line no-undef
+  var elemenDestination = $(destination);
+
+  $('html,body').animate(
+    {
+      scrollTop: elemenDestination.offset().top -125,
+    },
+    800
+  );
+  e.preventDefault();
+});
+
+//Gallery
+$(document)
+.on('click', '.page-scrollg', function (e) {
+  var destination = $(this).attr('href');
+  // eslint-disable-next-line no-undef
+  var elemenDestination = $(destination);
+
+  $('html,body').animate(
+    {
+      scrollTop: elemenDestination.offset().top -55,
+    },
+    800
+  );
+  e.preventDefault();
+});
+
+//projects
+$(document)
+.on('click', '.page-scrollp', function (e) {
+  var destination = $(this).attr('href');
+  // eslint-disable-next-line no-undef
+  var elemenDestination = $(destination);
+
+  $('html,body').animate(
+    {
+      scrollTop: elemenDestination.offset().top -55,
+    },
+    800
+  );
+  e.preventDefault();
+});
+
+//contact
+$(document)
+.on('click', '.page-scrollc', function (e) {
+  var destination = $(this).attr('href');
+  // eslint-disable-next-line no-undef
+  var elemenDestination = $(destination);
+
+  $('html,body').animate(
+    {
+      scrollTop: elemenDestination.offset().top -55,
+    },
+    800
+  );
+  e.preventDefault();
 });

@@ -21,7 +21,8 @@ function validation() {
     form.classList.add('valid');
     form.classList.remove('invalid');
     textu.innerHTML = 'Wrong Username';
-    textu.style.color = '#ff0000';
+    textu.style.color = '#ff0c0ce1';
+    console.log('Saya Abdi kelas 11😊 ');
     return false;
   }
 
@@ -29,7 +30,7 @@ function validation() {
     form.classList.remove('valid');
     form.classList.remove('invalid');
     texte.innerHTML = 'Email Has Not Filled';
-    texte.style.color = '#ff0000';
+    texte.style.color = '#ff0c0ce1';
     return false;
   }
 
@@ -37,7 +38,7 @@ function validation() {
     form.classList.remove('valid');
     form.classList.remove('invalid');
     textm.innerHTML = 'Minimum 20 Letters';
-    textm.style.color = '#ff0000';
+    textm.style.color = '#ff0c0ce1';
     return false;
   }
 }
@@ -47,7 +48,7 @@ function username_succes() {
     form.classList.remove('valid');
     form.classList.remove('invalid');
     textu.innerHTML = 'Username Success';
-    textu.style.color = '#00ff00';
+    textu.style.color = '#12fc12e1';
     return true;
   }
 }
@@ -56,13 +57,13 @@ function email_succes() {
     form.classList.add('valid');
     form.classList.remove('invalid');
     texte.innerHTML = 'Email Success';
-    texte.style.color = '#00ff00';
+    texte.style.color = '#12fc12e1';
     return true;
   } else {
     form.classList.remove('valid');
     form.classList.add('invalid');
     texte.innerHTML = 'Please Enter Valid Email';
-    texte.style.color = '#ff0000';
+    texte.style.color = '#ff0c0ce1';
     return false;
   }
 }
@@ -71,7 +72,7 @@ function message_succes() {
     form.classList.remove('valid');
     form.classList.remove('invalid');
     textm.innerHTML = 'Message Success';
-    textm.style.color = '#00ff00';
+    textm.style.color = '#12fc12e1';
     return true;
   }
 }

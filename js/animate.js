@@ -1,3 +1,5 @@
+
+
 //lokasi scroll
 window.addEventListener("scroll", (event) => {
   let scroll = this.scrollY;
@@ -66,12 +68,8 @@ window.addEventListener('scroll', function () {
   var projects = document.querySelector('.proh3');
   var proCol1 = document.querySelector('.pro-col1');
   var proCol2 = document.querySelector('.pro-col2');
-  var proCol3 = document.querySelector('.pro-col3');
-  var proCol4 = document.querySelector('.pro-col4');
 
-  projects.classList.toggle('animate-proh3', window.scrollY > 1100);
-  proCol1.classList.toggle('animate-col1', window.scrollY > 1100);
-  proCol2.classList.toggle('animate-col2', window.scrollY > 1100);
-  proCol3.classList.toggle('animate-col3', window.scrollY > 1100);
-  proCol4.classList.toggle('animate-col4', window.scrollY > 1100);
+  projects.classList.toggle('animate-proh3', window.scrollY > 1600);
+  proCol1.classList.toggle('animate-col1', window.scrollY > 1600);
+  proCol2.classList.toggle('animate-col2', window.scrollY > 1600);
 });

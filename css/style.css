@@ -240,7 +240,7 @@ header ul li i {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: #fff;
+  background-color: #111;
   border-radius: 3px;
   transition: all 0.5s;
 }
@@ -252,11 +252,11 @@ header ul li i {
   transform-origin: 0 100%;
 }
 .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: white;
+  background-color: #111;
   transform: rotate(45deg) translate(-1px, -1px);
 }
 .menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: white;
+  background-color: #111;
   transform: rotate(-45deg) translate(-1px, 0);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
@@ -720,7 +720,6 @@ header ul li i {
   flex-wrap: wrap;
 }
 .col-projects {
-  position: relative;
   width: 40%;
   height: max-content;
   opacity: 0;
@@ -982,29 +981,30 @@ footer i {
 }
 /*** Akhir Footer ***/
 
-@media screen and (max-width: 1300px) {
-  header {
-    padding: 10px 60px;
-  }
-  header ul {
-    width: 60% !important;
-  }
-}
-@media screen and (max-width: 1125px) {
-  .about-text {
-    padding: 0 20vw;
-  }
-}
 
-/***** Responsive kakak Tablet *****/
-@media screen and (max-width: 888px) {
-  /* All */
+/***** kakak Mobaile *****/
+@media screen and (max-width: 1170px) {
+  
   h3 {
-    font-size: 33px !important;
+    font-size: 15pt !important;
   }
+  h4{
+    font-size: 10pt !important;
+  }
+  p{
+    font-size: 9pt !important;
+  }
+  .btn i {
+    font-size: 14pt;
+    padding-top: 6px;
+  }
+
   /* header */
   header {
-    background-color: rgb(0, 191, 48);
+    width: 100% !important;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
   }
   header .logo a {
     font-size: 20px;
@@ -1014,6 +1014,7 @@ footer i {
   }
   .menu-toggle {
     display: flex;
+    margin-left: 50%;
     z-index: 2;
   }
   header ul {
@@ -1024,7 +1025,7 @@ footer i {
     height: 100vh;
     display: block;
     padding-top: 5em;
-    background-color: rgba(0, 191, 48, 0.92);
+    background-color: rgba(255, 255, 255, 0.92);
     z-index: 2;
     transform: translateX(100%);
     transition: all 1s;
@@ -1037,7 +1038,7 @@ footer i {
   header ul li {
     margin: 20px;
     padding-left: 5px;
-    border-bottom: 1px solid rgb(191, 255, 207);
+    border-bottom: 1px solid rgb(218, 218, 218);
   }
   .menu-to {
     position: absolute;
@@ -1052,117 +1053,58 @@ footer i {
   /* header End*/
 
   /* Slider */
-  .myslider {
-    height: 550px;
+  .slider {
+    height: 100vh;
+    display: flex;
   }
-  .text {
-    line-height: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-animation-name: down2;
-    -webkit-animation-duration: 2s;
-    animation-name: down2;
-    animation-duration: 2s;
-  }
-  @keyframes down2 {
-    from {
-      top: 35%;
-    }
-    to {
-      top: 50%;
-    }
-  }
-  @-webkit-keyframes down2 {
-    from {
-      top: 35%;
-    }
-    to {
-      top: 50%;
-    }
-  }
-  .text h1 {
-    font-size: 30px;
-  }
-  .text p {
-    font-size: 17px;
-  }
-  /* Slider End*/
-
-  /* Jumbotron */
-  .jumbotron {
-    margin-top: 660px;
-    padding-top: 0;
-  }
-  .jumbotron h1 {
-    font-size: 35px;
-  }
-  .jumbotron h4 {
-    font-size: 15px;
-  }
-  /* Jumbotron End*/
-
-  /* About */
-  .about h4 {
-    font-size: 19px;
-  }
-  .about-text {
-    padding: 0 20vw;
-  }
-  /* About End */
-}
-/***** kakak s Tablet End ******/
-
-/***** kakak Mobaile *****/
-@media screen and (max-width: 600px) {
-  h3 {
-    font-size: 30px;
-  }
-  .btn:hover {
-    transform: none !important;
-  }
-  .parallax-container {
-    margin: 0 !important;
-  }
-  /* header */
-  header {
-    box-shadow: 1px 0 4px #111;
-    padding: 10px 70px;
-  }
-  header .logo img {
-    width: 50px;
-  }
-  header .logo h4 {
-    font-size: 20px;
-  }
-  /* header End */
-
-  /* Slider */
   .myslider {
     width: 100%;
-    height: 360px;
-    margin-top: 4.4em;
+    height: 100vh;
   }
-  .text h1 {
-    font-size: 23px;
+  .myslider img {
+    position: relative;
+    width: 200%;
+    left: 50%;
+    height: 90vh !important;
+    animation-name: zoomm; 
+    animation-duration: 10s;
   }
-  .text p {
-    font-size: 12px;
+  @-webkit-keyframes zoomm {
+    from {
+      left: 50%;
+    }
+    to {
+      left: -150%;
+    }
   }
-  .prev,
-  .next {
-    font-size: 40px;
-  }
-  .dot {
-    width: 11px;
-    height: 11px;
+  @keyframes zoomm {
+    from {
+      left: 50%;
+    }
+    to {
+      left: -150%;
+    }
   }
   /* Slider End */
 
+  /* Back Top */
+  .back-top {
+    right: 20px;
+    bottom: 20px;
+  }
+  .back-top {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-circle-up {
+    font-size: 19pt !important;
+  }
+  /* Back Top End */
+
   /* Jumbotron */
   .jumbotron {
+    top: 20%;
     padding-bottom: 35px;
-    margin-top: 31em;
   }
   .jumbotron img {
     width: 180px;
@@ -1179,6 +1121,7 @@ footer i {
 
   /* About */
   .about {
+    margin-top: 48em;
     padding: 20px 0;
   }
   .about h4 {
@@ -1195,26 +1138,47 @@ footer i {
     text-align: center;
   }
   /* About End*/
-
+  
   /* Media */
+  #media {
+    height: 430px !important;
+  }
+  .meh3 {
+    margin: 15px auto 10px;
+    padding: 0 10px;
+    border-bottom: 3px solid rgb(51, 51, 51);
+  }  
   .wrapper {
     display: inline-block;
   }
-  /*  Media End */
+  .wrapper .icon span {
+    width: 60px;
+    height: 60px;
+  }
+  .wrapper .icon span i {
+    font-size: 25px;
+    transform: none;
+  }
+  /* media End
 
   /* Service */
+  .seh3 {
+    padding: 0 10px;
+    transition: none;
+    font-size: 19pt !important;
+  }
   .service {
     padding: 20px 0;
   }
   .container-service {
     display: block;
     padding: 20px 10px 0;
-    margin: 0;
+    margin: 0 auto !important;
   }
   .col-service {
     width: auto;
-    padding: 15px 40px;
-    margin: 20px;
+    padding: 0px 40px;
+    margin: 0 !important;
   }
   .service i {
     font-size: 45px;
@@ -1239,219 +1203,10 @@ footer i {
     padding: 20px 10px 30px;
   }
   .col-projects {
-    width: auto;
-    margin: 20px;
-  }
-  .btn {
-    margin-left: 40%;
-    width: 20%;
+    width: 80%;
+    margin: auto;
   }
   /* Projects End */
-
-  /* Contact */
-  .container-contact {
-    width: 300px;
-  }
-  .coh3 {
-    font-size: 28px !important;
-  }
-  .contactForm .inputBox span {
-    font-size: 15px;
-  }
-  .my-alert .msg .d-nonep {
-    display: none;
-  }
-  .my-alert .msg .d-nonem {
-    display: flex;
-  }
-  .my-alert .msg p {
-    font-size: 12pt !important;
-  }
-  /* Contact End */
-
-  /* Footer */
-  footer h6 {
-    font-size: 12px;
-  }
-  footer h6 i {
-    font-size: 13px !important;
-  }
-  /* Footer End*/
-}
-
-@media screen and (max-width: 490px) {
-  header {
-    padding: 10px 50px;
-  }
-  .projects .btn {
-    padding: 3px 19px 3px 10px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .btn {
-    width: 25%;
-  }
-  .btn i {
-    margin-left: 27px;
-  }
-}
-
-@media (min-width: 0) and (max-width: 390px) {
-  h3 {
-    font-size: 15pt !important;
-  }
-  h4{
-    font-size: 10pt !important;
-  }
-  p{
-    font-size: 9pt !important;
-  }
-  .btn i {
-    font-size: 14pt;
-    padding-top: 6px;
-  }
-
-  /* Loader */
-  .loaderw {
-    width: 90px;
-    height: 90px;
-  }
-  .loader-wrapper {
-    background-color: #fff;
-  }
-  /* Loader End*/
-
-  /* header */
-  header {
-    padding: 5px 20px;
-  }
-  header .logo h4 {
-    font-size: 12pt !important;
-  }
-  /* header End*/
-
-  /* Back Top */
-  .back-top {
-    right: 20px;
-    bottom: 20px;
-  }
-  .back-top {
-    width: 40px;
-    height: 40px;
-  }
-  .faArrowCircleUp {
-    font-size: 30px !important;
-  }
-  /* Back Top End */
-
-  /* Jumbotron */
-  .jumbotron img {
-    
-    width: 120px;
-    margin-bottom: 0;
-  }
-  .jumbotron h1 {
-    font-size: 15px;
-  }
-  .jumbotron h4 {
-    font-size: 7pt !important;
-  }
-  /* Jumbotron End */
-
-  /* About */
-  .abh3 {
-    height: 40px;
-    width: 100px;
-    padding: 0;
-    border-bottom: 3px solid rgb(80, 80, 80);
-  }
-  .about h4 {
-    font-size: 10pt;
-    margin: 0;
-    color: rgb(60, 60, 60) !important;
-  }
-  .about-text p {
-    font-size: 7pt !important;
-    color: #111 !important;
-    transition: 0s;
-  }
-  /* About End */
-
-  /* Media */
-  #media {
-    height: 430px !important;
-  }
-  .meh3 {
-    height: 40px;
-    width: 180px;
-    margin: 15px auto 10px;
-    padding: 0;
-    border-bottom: 3px solid rgb(51, 51, 51);
-  }
-  .wrapper .icon span {
-    width: 60px;
-    height: 60px;
-  }
-  .wrapper .icon span i {
-    font-size: 25px;
-    transform: none;
-  }
-  /* media End
-   */
-
-  /* Service */
-  .service {
-    margin: 0px 50px !important;
-  }
-  .seh3 {
-    height: 40px;
-    width: 120px;
-    padding: 0;
-    border-bottom: 3px solid rgb(80, 80, 80);
-    transition: none;
-  }
-  
-  .col-service {
-    top: 0;
-    opacity: 1;
-  }
-  .service h4 {
-    font-size: 8pt !important;
-  }
-  .service p {
-    font-size: 6pt !important;
-  }
-  /* Service End */
-
-  /* Projects */
-  .proh3 {
-    height: 60px;
-    width: 120px;
-    padding-top: 15px;
-    border-bottom: 3px solid rgb(80, 80, 80);
-    transition: none;
-  }
-  .animate-proh3 {
-    font-size: 19pt !important;
-  }
-  .col-projects {
-    top: 0;
-    opacity: 1 !important;
-  }
-  .pro-col1 {
-    left: 0;
-    transition: none;
-  }
-  .pro-col2 {
-    top: 0;
-    transition: none;
-  }
-  .pro-col3 {
-    right: 0;
-    transition: none;
-  }
-  /* Projects End*/
 
   /* Contanct */
   .coh3 {
@@ -1490,14 +1245,76 @@ footer i {
     padding: 10px 15px 15px !important;
   }
   form button {
-    width: 85px !important;
-    height: 45px !important;
     margin: 5px auto;
   }
   .inputBox button {
     border: none;
   }
   /* Contact End */
+
+  /* Footer */
+  footer h6 {
+    font-size: 12px;
+  }
+  footer h6 i {
+    font-size: 13px !important;
+  }
+  /* Footer End*/
+}
+
+
+
+@media (max-width: 390px) {
+  /* Jumbotron */
+  .jumbotron img {
+    
+    width: 120px;
+    margin-bottom: 0;
+  }
+  .jumbotron h1 {
+    font-size: 15px;
+  }
+  .jumbotron h4 {
+    font-size: 7pt !important;
+  }
+  /* Jumbotron End */
+
+  /* About */
+  .abh3 {
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    border-bottom: 3px solid rgb(80, 80, 80);
+  }
+  .about h4 {
+    font-size: 10pt;
+    margin: 0;
+    color: rgb(60, 60, 60) !important;
+  }
+  .about-text p {
+    font-size: 7pt !important;
+    color: #111 !important;
+    transition: 0s;
+  }
+  /* About End */
+
+  /* Projects */
+  .proh3 {
+    height: 60px;
+    width: 120px;
+    padding-top: 15px;
+    border-bottom: 3px solid rgb(80, 80, 80);
+    transition: none;
+  }
+  .animate-proh3 {
+    font-size: 19pt !important;
+  }
+  .col-projects {
+    margin: 20px auto;
+    opacity: 1 !important;
+  }
+  /* Projects End*/
+
 
   /* Footer */
   footer p {
@@ -1508,8 +1325,15 @@ footer i {
   }
   /* Footer End*/
 }
-@media (min-width: 0) and (max-width: 350px) {
-  .btn {
-    padding-left: 5px !important;
+
+@media (min-width: 0) and (max-width: 330px) {
+  .about {
+    margin-top: 35em;
+  }
+  .container-contact {
+    margin: 20% auto;
+  }
+  #contact {
+    height: 100vh !important;
   }
 }

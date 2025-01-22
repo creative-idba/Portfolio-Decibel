@@ -162,7 +162,7 @@
     </section>
     <!--***  Medsos End ***-->
 
-    <!--*** Service ***-->
+    <!--*** Gallery ***-->
     <section id="service" class="service sec">
       <div class="garish3">
         <h3 class="seh3">Gallery</h3>
@@ -170,7 +170,7 @@
       <div class="container-service">
         <div class="col-service">
           <img src="img/comvis-formulatrix.JPG" alt="">
-          <img src="" alt="">
+          <img class="d-nonem" src="" alt="">
           <img src="img/full-squad.JPG" alt="">
         </div>
         <div class="col-service">
@@ -273,6 +273,7 @@
     <script src="js/animate.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/slider.js"></script>
 
     <script>
       let loaderWrapper = document.querySelector('.loader-wrapper');
@@ -300,10 +301,12 @@
     </script>
     <!-- jajal -->
     <script>
+      document.onmousedown=disableclick;status="Right Click Disabled";function disableclick(event){ if(event.button==2) { alert(status); return false; }}
+      
       var abdi = 1;
 
       if (abdi < 6 || abdi > 6) {
-        console.log('Saya Abdi kelas 11😊 ');
+        console.log('Welcome to program DECIBELL😊 ');
       } else {
         console.log('error');
       }

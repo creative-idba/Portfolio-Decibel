@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en" oncontextmenu="return false"> 
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -301,7 +301,11 @@
     </script>
     <!-- jajal -->
     <script>
-      document.onmousedown=disableclick;status="Right Click Disabled";function disableclick(event){ if(event.button==2) { alert(status); return false; }}
+      document.onmousedown=disableclick;status="Right Click Disabled";function disableclick(event){
+       if(event.button==2) {
+         alert(status); return false; 
+        }
+      }
 
       document.addEventListener("contextmenu", function(e){  
       e.preventDefault(); 

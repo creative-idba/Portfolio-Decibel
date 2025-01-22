@@ -961,7 +961,6 @@ header ul li i {
 }
 /*** Contact End ***/
 
-
 /*** Footer ***/
 footer {
   display: block;
@@ -981,10 +980,8 @@ footer i {
 }
 /*** Akhir Footer ***/
 
-
 /***** kakak Mobaile *****/
 @media screen and (max-width: 1170px) {
-  
   h3 {
     font-size: 15pt !important;
   }
@@ -1262,8 +1259,6 @@ footer i {
   /* Footer End*/
 }
 
-
-
 @media (max-width: 390px) {
   /* Jumbotron */
   .jumbotron img {
@@ -1314,7 +1309,6 @@ footer i {
     opacity: 1 !important;
   }
   /* Projects End*/
-
 
   /* Footer */
   footer p {
